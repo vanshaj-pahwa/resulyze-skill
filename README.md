@@ -4,7 +4,7 @@ A Claude skill for writing and rewriting job search content: resumes, cover lett
 
 ---
 
-## What it covers
+**What it covers**
 
 - **Resume / CV:** ATS formatting rules, bullet rewrites, summary cleanup, JD tailoring
 - **Cover letters:** structure, opening hooks, cutting generic filler, matching to a role
@@ -14,9 +14,9 @@ One skill, one install, the whole application package.
 
 ---
 
-## Install
+**Install**
 
-### Claude.ai (no setup required)
+**Claude.ai (no setup required)**
 
 1. Download this repo as a ZIP (click **Code > Download ZIP** on GitHub)
 2. Go to [claude.ai](https://claude.ai)
@@ -25,7 +25,7 @@ One skill, one install, the whole application package.
 
 That's it. Claude picks it up immediately.
 
-### Claude Code / CLI
+**Claude Code / CLI**
 
 Drop the `resulyze/` folder into your Claude skills directory:
 
@@ -38,9 +38,9 @@ Claude picks it up on next load.
 
 ---
 
-## Usage
+**Usage**
 
-### Claude.ai
+**Claude.ai**
 
 Paste whatever you're working on and ask Claude to improve it. The skill triggers automatically for requests like:
 
@@ -54,7 +54,7 @@ Paste whatever you're working on and ask Claude to improve it. The skill trigger
 
 If you have a job description, paste it alongside your content. All three formats improve significantly with one.
 
-### Claude Code / CLI
+**Claude Code / CLI**
 
 Use the `/resulyze` slash command to trigger the skill, then describe what you need:
 
@@ -66,21 +66,11 @@ claude
 > /resulyze clean up my LinkedIn About section: [paste text]
 ```
 
-You can also pipe files in directly:
-
-```bash
-# Resume rewrite
-echo "/resulyze rewrite this resume" | cat - resume.txt | claude
-
-# Tailor to a JD
-echo "/resulyze tailor my resume to this JD" | cat - resume.txt jd.txt | claude
-```
-
 ---
 
-## What gets fixed
+**What gets fixed**
 
-### Resume
+**Resume**
 - Duty lists → achievement bullets with outcomes and numbers
 - Power verb openers ("Spearheaded", "Catalyzed") → plain language with results
 - Passive constructions ("Responsible for") → ownership statements
@@ -88,13 +78,13 @@ echo "/resulyze tailor my resume to this JD" | cat - resume.txt jd.txt | claude
 - Buzzword summaries → 2-4 sentences with actual experience signals
 - ATS issues: section names, date format inconsistencies, keyword gaps, structural problems
 
-### Cover letter
+**Cover letter**
 - Generic enthusiasm openers → specific connection to the role
 - Resume rehash in prose → 1-2 relevant achievements, written as a person explaining their work
 - Formal closing theatre → one direct sentence
 - Company flattery with no specifics → either cut or made concrete
 
-### LinkedIn
+**LinkedIn**
 - "I am passionate about" openers → what you actually do, in plain language
 - Mission statement inflation → specific positioning
 - Listicle skills dumps → removed
@@ -103,7 +93,7 @@ echo "/resulyze tailor my resume to this JD" | cat - resume.txt jd.txt | claude
 
 ---
 
-## Example (resume bullet)
+**Example (resume bullet)**
 
 **Before:**
 > Spearheaded the development of scalable microservices, leveraging cutting-edge technologies to drive business value in a fast-paced, agile environment.
@@ -113,7 +103,7 @@ echo "/resulyze tailor my resume to this JD" | cat - resume.txt jd.txt | claude
 
 ---
 
-## Example (LinkedIn About opener)
+**Example (LinkedIn About opener)**
 
 **Before:**
 > I am a passionate software engineer deeply committed to leveraging innovative technologies to deliver seamless, impactful solutions that drive business growth.
@@ -123,6 +113,6 @@ echo "/resulyze tailor my resume to this JD" | cat - resume.txt jd.txt | claude
 
 ---
 
-## Contributing
+**Contributing**
 
 PRs welcome. Useful additions: before/after examples for non-engineering roles (PM, design, marketing), additional ATS edge cases, or LinkedIn headline formulas for specific industries.
